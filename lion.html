@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lion of Judah – Camisetas by Susana</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Curare+New&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>/* --- LIGHTBOX --- */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  animation: fadeIn .3s ease;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  font-family: sans-serif;
+  user-select: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Galería clickeable */
+.gallery-img img {
+  cursor: zoom-in;
+}
+/* --- GALERÍA DE FOTOS --- */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.gallery-img {
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.gallery-img img {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+  display: block;
+  transition: transform .4s ease;
+}
+
+.gallery-img:hover img {
+  transform: scale(1.07);
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    gap: 1rem;
+  }
+  .gallery-img img {
+    max-height: 330px;
+  }
+}
+/* --- GALERÍA DE FOTOS --- */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.gallery-img {
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  width: 100%;
+  max-width: 350px;          /* tamaño máximo de cada foto */
+  margin: 0 auto;            /* centra las fotos */
+}
+
+.gallery-img img {
+  width: 100%;
+  height: auto;
+  max-height: 420px;         /* esta es la altura máxima */
+  object-fit: cover;         /* recorta la imagen sin deformarla */
+  display: block;
+  transition: transform .4s ease;
+}
+
+.gallery-img:hover img {
+  transform: scale(1.07);    /* zoom elegante */
+}
+
+/* Ajusta fotos en celular */
+@media (max-width: 480px) {
+  .gallery-img {
+    max-width: 100%;
+  }
+  .gallery-img img {
+    max-height: 340px;
+  }
+}
+
+    :root{--peach:#F4A77A;--rust-red:#921A00;--cream-yellow:#FAD9A0;--light-beige:#E9D7C6;--warm-white:#F5F0EB;--terracotta:#C55A33;--olive-grey:#C4CCB3;--deep-brown:#482A1F;--text:#3b2f2a;--radius:14px;--shadow:0 10px 25px rgba(0,0,0,0.06);}
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{background:var(--warm-white);color:var(--text);font-family:'Raleway',sans-serif;}
+    h1,h2,h3,.logo{font-family:'Curare New',serif;}
+    header{background:var(--light-beige);padding:1rem 1.5rem;border-bottom:1px solid var(--cream-yellow);display:flex;justify-content:space-between;align-items:center;}
+    .logo{font-size:1.1rem;letter-spacing:.05em;color:var(--deep-brown);}
+    main{max-width:900px;margin:0 auto;padding:2rem 1.5rem 3rem;}
+    a{text-decoration:none;}
+    .btn{background:var(--rust-red);color:#fff;padding:.6rem 1.3rem;border-radius:999px;font-size:.9rem;display:inline-block;transition:.2s;}
+    .btn:hover{background:var(--terracotta);}
+    .layout{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,0.9fr);gap:2rem;align-items:start;}
+    .image-wrapper{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;display:flex;align-items:center;justify-content:center;min-height:300px;}
+    .image-inner{overflow:hidden;width:100%;}
+    .image-inner img{width:100%;display:block;transition:transform .4s ease;}
+    .image-inner:hover img{transform:scale(1.08);}
+    .placeholder{font-size:.9rem;color:#87756a;padding:2rem;text-align:center;}
+    .badge{background:var(--terracotta);color:#fff;font-size:.75rem;padding:.25rem .7rem;border-radius:999px;display:inline-block;margin:1rem;}
+    .info h1{font-size:2rem;margin-bottom:.5rem;color:var(--rust-red);}
+    .info p{font-size:.95rem;margin-bottom:.7rem;}
+    .price{margin:1rem 0;font-size:1rem;}
+    .price-old{text-decoration:line-through;color:#8a7b73;margin-right:.6rem;}
+    .price-new{font-weight:700;color:var(--deep-brown);}
+    .small{font-size:.8rem;color:#7a6d66;margin-bottom:1rem;}
+    .back-link{display:inline-block;margin-top:1.5rem;font-size:.85rem;color:#7a6d66;}
+    @media(max-width:768px){.layout{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo">Camisetas by Susana</div>
+  <a class="btn" href="https://wa.me/573133051492">Comprar por WhatsApp</a>
+</header>
+
+<main>
+  <a class="back-link" href="index.html">← Volver a la colección</a>
+
+  <section class="layout">
+    <div class="image-wrapper">
+      <span class="badge">Lion of Judah</span>
+      <div class="image-inner">
+        <!-- Cuando tengas la foto, guárdala como lion.jpg y se verá aquí -->
+        <!-- <img src="lion.jpg" alt="Camiseta Lion of Judah"> -->
+        <div class="placeholder">
+          Muy pronto foto oficial de esta camiseta.<br>
+          Guarda tu imagen como <strong>lion.jpg</strong> en la misma carpeta y reemplaza este bloque por una etiqueta &lt;img&gt;.
+        </div>
+      </div>
+    </div>
+
+    <div class="info">
+      <h1>Lion of Judah</h1>
+      <p>Diseño inspirado en Jesús como el León de Judá, fuerte y majestuoso.</p>
+
+      <div class="price">
+        <span class="price-old">$75.000</span>
+        <span class="price-new">$65.000</span>
+      </div>
+
+      <p class="small">Cuando tengas la foto lista, solo cambia el bloque de imagen por &lt;img src="lion.jpg"&gt;.</p>
+
+      <a class="btn" href="https://wa.me/573133051492?text=Hola%20Susan,%20quiero%20la%20camiseta%20Lion%20of%20Judah%20en%20oferta.">Quiero esta camiseta</a>
+    </div>
+  </section>
+</main>
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" onclick="closeLightbox()">×</span>
+  <img id="lightbox-img" src="" alt="imagen ampliada">
+</div>
+<script>
+function openLightbox(src) {
+  document.getElementById('lightbox-img').src = src;
+  document.getElementById('lightbox').style.display = 'flex';
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+}
+</script>
+</body>
+</html>

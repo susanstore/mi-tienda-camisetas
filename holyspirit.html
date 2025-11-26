@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Camiseta: Holy Spirit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&family=Courgette&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background: #F8F3ED;
+      font-family: "Raleway", sans-serif;
+      color: #4B2B1F;
+    }
+
+    h1, h2 {
+      font-family: "Courgette", cursive;
+      color: #A33A1D;
+    }
+
+    header {
+      background: #E9D7C6;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #FAD9A0;
+    }
+
+    .logo {
+      font-size: 1.3rem;
+      font-family: "Courgette";
+    }
+
+    .btn {
+      background: #A33A1D;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: .9rem;
+    }
+
+    main {
+      max-width: 1080px;
+      margin: auto;
+      padding: 2rem 1.5rem;
+    }
+
+    .versiculo {
+      font-style: italic;
+      margin: .6rem 0 1rem;
+      color: #C55A33;
+      line-height: 1.5;
+    }
+
+    .price {
+      margin: 1rem 0;
+      font-size: 1.2rem;
+    }
+
+    .price-old {
+      color: #8A7B73;
+      text-decoration: line-through;
+      margin-right: .5rem;
+    }
+
+    .price-new {
+      font-weight: bold;
+      color: #4B2B1F;
+    }
+
+    /* Portada */
+    .portada {
+      width: 100%;
+      height: 420px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+      margin-bottom: 2rem;
+    }
+
+    .portada img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Galería */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .gallery-img {
+      width: 100%;
+      height: 300px;
+      border-radius: 12px;
+      overflow: hidden;
+      cursor: pointer;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .gallery-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.3s;
+    }
+
+    .gallery-img:hover img {
+      transform: scale(1.06);
+    }
+
+    /* Lightbox */
+    .lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .lightbox img {
+      max-width: 85%;
+      max-height: 85%;
+      border-radius: 10px;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 25px;
+      font-size: 2.6rem;
+      color: white;
+      cursor: pointer;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      font-size: 3rem;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      user-select: none;
+    }
+
+    .left {
+      left: 20px;
+    }
+    .right {
+      right: 20px;
+    }
+
+    /* Colores */
+    .color-dots {
+      display: flex;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .dot {
+      width: 27px;
+      height: 27px;
+      border-radius: 50%;
+      border: 2px solid #4B2B1F;
+    }
+
+    .blue {
+      background: #8A9CAA;
+    }
+    .black {
+      background: #1A1A1A;
+    }
+    .bone {
+      background: #F3EFE7;
+    }
+    .mandarin {
+      background: #EDA16E;
+    }
+    .brown {
+      background: #4B2B1F;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    table th {
+      background: #E9D7C6;
+      padding: 10px;
+    }
+
+    table td {
+      padding: 10px;
+      border-bottom: 1px solid #F0E6D8;
+      text-align: center;
+    }
+
+    ul {
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">Camisetas by Susana</div>
+    <a class="btn" href="https://wa.me/573133051492">Ordenar por WhatsApp</a>
+  </header>
+
+  <main>
+    <a href="index.html">← Volver</a>
+
+    <h1>Camiseta: Holy Spirit</h1>
+
+    <p class="versiculo">
+      “¿No se dan cuenta de que todos ustedes juntos son el templo de Dios
+      y que el Espíritu de Dios vive en ustedes?”
+      — 1 Corintios 3:16 (NTV)
+    </p>
+
+    <div class="price">
+      <span class="price-old">$80.000</span>
+      <span class="price-new">$69.900</span>
+    </div>
+
+    <!-- PORTADA -->
+    <div class="portada">
+      <img src="img/holyspirit-4.jpg" />
+    </div>
+
+    <!-- SCRIPT IMÁGENES -->
+    <script>
+      const holyImages = [
+        "img/holyspirit-1.jpg",
+        "img/holyspirit-2.jpg",
+        "img/holyspirit-3.jpg",
+        "img/holyspirit.jpg",
+        "img/holyspirit-5.jpg"
+      ];
+    </script>
+
+    <!-- GALERÍA -->
+    <div class="gallery">
+      <div class="gallery-img" onclick="openLightbox(0, holyImages)">
+        <img src="img/holyspirit-1.jpg" />
+      </div>
+      <div class="gallery-img" onclick="openLightbox(1, holyImages)">
+        <img src="img/holyspirit-2.jpg" />
+      </div>
+      <div class="gallery-img" onclick="openLightbox(2, holyImages)">
+        <img src="img/holyspirit-3.jpg" />
+      </div>
+      <div class="gallery-img" onclick="openLightbox(3, holyImages)">
+        <img src="img/holyspirit.jpg" />
+      </div>
+      <div class="gallery-img" onclick="openLightbox(4, holyImages)">
+        <img src="img/holyspirit-5.jpg" />
+        
+      </div>
+    </div>
+
+    <h2 style="margin-top: 3rem">Colores disponibles</h2>
+    <div class="color-dots">
+      <div class="dot blue"></div>
+      <div class="dot black"></div>
+      <div class="dot bone"></div>
+      <div class="dot mandarin"></div>
+      <div class="dot brown"></div>
+    </div>
+
+    <h2 style="margin-top: 3rem">Tallas oversize</h2>
+    <p>Tallas disponibles: S, M, L, XL.</p>
+
+    <table>
+      <tr>
+        <th></th>
+        <th>S</th>
+        <th>M</th>
+        <th>L</th>
+        <th>XL</th>
+      </tr>
+      <tr>
+        <td>Ancho</td>
+        <td>55 cm</td>
+        <td>58 cm</td>
+        <td>62 cm</td>
+        <td>65 cm</td>
+      </tr>
+      <tr>
+        <td>Largo</td>
+        <td>72 cm</td>
+        <td>73 cm</td>
+        <td>75 cm</td>
+        <td>80 cm</td>
+      </tr>
+      <tr>
+        <td>Manga</td>
+        <td>25 cm</td>
+        <td>26.5 cm</td>
+        <td>28 cm</td>
+        <td>28.5 cm</td>
+      </tr>
+    </table>
+
+    <h2 style="margin-top: 3rem">Envíos y condiciones</h2>
+    <ul>
+      <li>100% algodón colombiano.</li>
+      <li>Fit oversize.</li>
+      <li>El envío es asumido por el comprador.</li>
+      <li>Entrega estimada de 8 días hábiles.</li>
+      <li>En Medellín la entrega es más rápida.</li>
+      <li>El pago debe hacerse antes del envío.</li>
+      <li>No se aceptan devoluciones.</li>
+    </ul>
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" onclick="closeLightbox()">×</span>
+    <span class="arrow left" onclick="prevImage()">❮</span>
+    <img id="lightbox-img" />
+    <span class="arrow right" onclick="nextImage()">❯</span>
+  </div>
+
+  <script>
+    let currentIndex = 0;
+    let currentImages = [];
+
+    function openLightbox(i, arr) {
+      currentIndex = i;
+      currentImages = arr;
+      document.getElementById("lightbox-img").src = currentImages[currentIndex];
+      document.getElementById("lightbox").style.display = "flex";
+    }
+
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+
+    function nextImage() {
+      currentIndex = (currentIndex + 1) % currentImages.length;
+      document.getElementById("lightbox-img").src = currentImages[currentIndex];
+    }
+
+    function prevImage() {
+      currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+      document.getElementById("lightbox-img").src = currentImages[currentIndex];
+    }
+  </script>
+</body>
+</html>
